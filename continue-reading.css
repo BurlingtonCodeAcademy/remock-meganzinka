@@ -1,0 +1,65 @@
+
+/*margins & header*/
+body {
+    margin-left: 2in;
+    margin-right: 2in;
+}
+
+#header {
+    display: block;
+    text-align: center;
+}
+
+/*grid to hold two columns*/ 
+#main {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 1fr; 
+    color: aquamarine;
+    grid-gap: 1em;
+}
+
+/*left side more in depth text*/
+.container1 {
+    grid-column: 1;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 2px; 
+}
+.large-image {
+    width: 500px;
+}
+
+
+/*right side w/ 3 blog posts, 2 other posts*/
+.container2{
+    grid-column:2;
+    color: red;
+    display: flex;
+    flex-direction: column; 
+    padding: 2px;
+
+}
+/*want this text to float around the images*/
+.float-text {
+    color: purple;
+    float:right;
+}
+
+.small-image {
+    width : 100px;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+    width: 70px;
+    background-color: #f2f3f4;
+    color: #B5838D;
+    font-size: 10px; 
+    border-radius: 3px;
+    font-style: bold;
+}
+
