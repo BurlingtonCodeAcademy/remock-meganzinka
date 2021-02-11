@@ -1,9 +1,6 @@
 
 /*margins & header*/
-body {
-    margin-left: 2in;
-    margin-right: 2in;
-}
+
 
 #header {
     display: block;
@@ -13,8 +10,8 @@ body {
 /*grid to hold two columns*/ 
 #main {
     display: grid;
-    grid-template-columns: 60% 30%;
-    grid-template-rows: 1fr; 
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr minmax(5em, auto);
     color: aquamarine;
     grid-gap: 1em;
 }
@@ -28,7 +25,9 @@ body {
     padding: 2px; 
 }
 .large-image {
-    width: 500px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%; 
 }
 
 
@@ -36,19 +35,20 @@ body {
 .container2{
     grid-column:2;
     color: red;
-    display: flex;
+    display: flexbox;
     flex-direction: column; 
     padding: 2px;
+    padding-top: 65px;
 
 }
 /*want this text to float around the images*/
 .float-text {
     color: purple;
-    float:right;
 }
 
 .small-image {
     width : 100px;
+    float: left;
 }
 
 button {
@@ -63,3 +63,9 @@ button {
     font-style: bold;
 }
 
+@media (min-width: 75em) {
+    body {
+    margin-left: 2in; 
+    margin-right: 2in;
+    }
+}
