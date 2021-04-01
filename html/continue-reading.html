@@ -5,7 +5,7 @@
   <title>Continue Reading</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link href="index.css" rel="stylesheet">
+  <link href="/style/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
       </a>
       <h3>For Those Who Enjoy Continuing to Read</h3>
     </section>
-
+    <!-- left side main content container  -->
     <section id="home">
       <div class="container1">
         <h2>Everybody needs a friend. Let all these <b class="bold">little things </b>happen</h2>
@@ -61,12 +61,8 @@
           make you happy. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things
           Everybody's different. Trees are different. Let them all be individuals.</p>
 
-
-
-
-
       </div>
-
+      <!-- right side blog teasers  -->
       <div class="container2">
         <a href="blog-post.html"><button>July 30</button></a>
         <h5>Just Another Post</h5>
@@ -125,57 +121,65 @@
       </div>
   </div>
   </section>
-
-  <section id="footer">
-    <h2> Questions or Comments? Get in Touch:</h2>
-
-    <textarea type="name" id="name" placeholder="Name" name="name"></textarea>
+<!-- contact section  -->
+<section id="footer">
+  <h2> Questions or Comments? Get in Touch:</h2>
+  <!-- enter contact info  -->
+  <form>
+    <textarea type="name" id=name placeholder="Name" name="name"></textarea>
     <textarea type="email" id="email" placeholder="Email" name="email"></textarea>
-    <textarea type="message" id="message" placeholder="Message" name="message"></textarea>
-
-    <button id="sendbutton">Send Message</button>
-
-    <p class="description">Any little thing can be your friend if you let it be. If it's not what you want - stop and
-      change it. Don't just keep going and expect it will get better. </p>
+    <textarea type="message" id="message" placeholder="Message" name=message></textarea>
+   <!-- submit message -->
+    <button onclick id="sendbutton">Send Message</button>
+  </form>
+     <!-- contact info intro  -->
+  <p class="description">Any little thing can be your friend if you let it be. If it's not what you want - stop and
+    change it. Don't just keep going and expect it will get better. </p>
+     <!-- mailing address  -->
     <div class="addresscontainer">
-      <a href="https://www.google.com/maps" target="_blank">
-        <img class="address logo" src="https://icon-library.com/images/home-logo-icon/home-logo-icon-16.jpg"></a>
-      <p class="address"> 1234 Address St. </br>Town, ST 00000, USA </p>
-    </div>
-    <div class="phonecontainer">
-      <a href="https://www.whatsapp.com/?lang=en" target="_blank">
-        <img class="phone logo" src="http://cdn.onlinewebfonts.com/svg/img_503524.png"></a>
-      <p class="phone"> (123) 456-7890 </p>
-    </div>
-    <div class="emailaddresscontainer">
-      <a href="https://gmail.com" target="_blank">
-        <img class="emailaddress logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg"></a>
-      <p class="emailaddress"> email@website.com</p>
-    </div>
-    <div class="tweetcontainer">
-      <a href="https://twitter.com/" target="_blank">
-        <img class="twitter logo" src="https://seeklogo.com/images/T/twitter-logo-A84FE9258E-seeklogo.com.png"></a>
-      <p class="twitter"> @tweetme</p>
-    </div>
-    <div class="igcontainer">
-      <a href="https://www.instagram.com/" target="_blank">
-        <img class="instagram logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"></a>
-      <p class="instagram"> @instagram_me</p>
-    </div>
-    <div class="dribble-container">
-      <a href="https://www.dribble.com" target="_blank">
-        <img class="dribble logo" src="https://cdn.worldvectorlogo.com/logos/dribbble-icon.svg"></a>
-      <p class="dribble"> www.dribble.com</p>
-    </div>
-    <div class="fbcontainer">
-      <a href="https://www.facebook.com" target="_blank">
-        <img class="facebook logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png"></a>
-      <p class="facebook"> www.facebook.com</p>
-    </div>
-  </section>
-
+    <a href="https://www.google.com/maps" target="_blank">
+      <img class="address logo" src="https://icon-library.com/images/home-logo-icon/home-logo-icon-16.jpg"></a>
+    <p class="address"> 1234 Address St. </br>Town, ST 00000, USA </p>
+  </div>
+     <!-- phone number  -->
+  <div class="phonecontainer">
+    <a href="https://www.whatsapp.com/?lang=en" target="_blank">
+      <img class="phone logo" src="http://cdn.onlinewebfonts.com/svg/img_503524.png"></a>
+    <p class="phone"> (123) 456-7890 </p>
+  </div>
+     <!-- email info  -->
+  <div class="emailaddresscontainer">
+    <a href="https://gmail.com" target="_blank">
+      <img class="emailaddress logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg"></a>
+    <p class="emailaddress"> email@website.com</p>
+  </div>
+  <div class="tweetcontainer">
+    <a href="https://twitter.com/" target="_blank">
+      <img class="twitter logo" src="https://seeklogo.com/images/T/twitter-logo-A84FE9258E-seeklogo.com.png"></a>
+    <p class="twitter"> @tweetme</p>
+  </div>
+     <!-- instagram info  -->
+  <div class="igcontainer">
+    <a href="https://www.instagram.com/" target="_blank">
+      <img class="instagram logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"></a>
+    <p class="instagram"> @instagram_me</p>
+  </div>
+     <!-- dribble info  -->
+  <div class="dribble-container">
+    <a href="https://www.dribble.com" target="_blank">
+      <img class="dribble logo" src="https://cdn.worldvectorlogo.com/logos/dribbble-icon.svg"></a>
+    <p class="dribble"> www.dribble.com</p>
+  </div>
+     <!-- facebook info  -->
+  <div class="fbcontainer">
+    <a href="https://www.facebook.com" target="_blank">
+      <img class="facebook logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png"></a>
+    <p class="facebook"> www.facebook.com</p>
+  </div>
+</section>
+<script src="/index.js"></script>
 </body>
 
 </html>
